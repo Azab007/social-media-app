@@ -24,8 +24,6 @@ Our Simple Full-Stack Social Media Platform is designed to provide users with a 
 - **Like a Post**: Users can like posts.
 - **News Feed**: Users can view a feed of posts from users they follow.
 - **User Profiles**: Each user has a profile page displaying their posts and followers.
-- **Upload Profile Pictures**: Each user can upload a profile picture.
-
 ## Technologies Used
 
 - **Frontend**:
