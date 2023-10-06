@@ -11,6 +11,7 @@ Welcome to my Simple Full-Stack Social Media Facebook Clone! as a part of course
 5. [Configuration](#configuration)
 6. [Usage](#usage)
 7. [Folder Structure](#folder-structure)
+8. [Preview](#preview)
 
 ## Introduction
 
