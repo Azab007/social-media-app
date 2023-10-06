@@ -15,7 +15,7 @@ try {
     });
 
     await newuser.save();
-    res.status(200).json(newuser);
+    return res.status(200).json(newuser);
 } catch (error) {
     res.status(500).json(error);
 }
@@ -27,10 +27,12 @@ exports.login = async(req, res) => {
 
     try {
         const user = await User.findOne({email: req.body.email});
-    !user && res.status(404).json("user not found");
+        if (!user)
+            return res.status(404).json("user not found");
 
     const validPass = await bcrypt.compare(req.body.password, user.password);
-    !validPass && res.status(400).json("Wrong password");
+    if (!validPass)
+    return res.status(400).json("Wrong password");
     res.status(200).json(user);
         
     } catch (error) {
